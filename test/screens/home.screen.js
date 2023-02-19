@@ -8,11 +8,6 @@ class HomeScreen {
         this.enterStoreAdress.click()
 
     }
-
-    async twoFactorLogin(password){
-        await this.#password.setValue(password)
-        await this.#continue.click()
-    }
 }
 
 module.exports = new HomeScreen()
