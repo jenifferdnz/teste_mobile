@@ -14,13 +14,12 @@ exports.config = {
     capabilities: [{
         "platformName": "Android",
         "platformVersion": "9.0",
-        "deviceName": "ebac-qe",
+        "deviceName": "ebacc-qe",
         "automationName": "Uiautomator2",
-        "app": join(process.cwd(), './app/android/Android-NativeDemoApp-0.4.0.apk'),
-        //"appActivity": ".ui.main.MainActivity",
-        "appWaitActivity": ".MainActivity",
-        "appActivity": ".SplashActivity", 
-        "appPackage": "com.wdiodemoapp"
+        "app": join(process.cwd(), './app/android/wcandroid-12.2-Signed.apk'),
+        "appActivity": ".ui.main.MainActivity",
+        "appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity",
+        "appPackage": "com.woocommerce.android"
 
     }]
 
